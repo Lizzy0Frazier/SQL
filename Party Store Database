@@ -1,0 +1,13 @@
+CREATE TABLE party_store (id INTEGER primary key, item TEXT, quanity INTEGER,  color TEXT, price INTEGER);
+
+INSERT INTO party_store VALUES
+(1, "cups", 5, "yellow", 8),
+(2, "plates", 2, "red", 4),
+(3, "napkins", 5, "blue", 2),
+(4, "cutlery", 5, "green", 1);
+
+How many items have 5 or more instock?
+SELECT * from party_store WHERE quanity >=5;
+
+How many items in stock in total?
+SELECT SUM(quanity) from party_store;
